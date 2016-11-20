@@ -1,0 +1,331 @@
+/* zorgt ervoor dat de body geen randje witruimte om de pagina geeft */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.hide{
+    display: none;
+}
+
+/* STYLING VAN DE HEADER */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+nav {
+    background-color: rgb(255,204,0);
+    padding: 1.5em 1em;
+
+}
+
+nav ul li:last-of-type {
+    float: right;
+    font-size: 0.9em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+
+header img {
+    width: 100%;
+
+}
+
+header h1 {
+    position: absolute;
+    margin-left: 1em;
+}
+
+/* STYLING VAN DE MAIN  */
+
+main {
+    float: left;
+    width: 60%;
+    padding: 1em 2em;
+    box-sizing: border-box;
+}
+
+main article > h1 {
+    text-align: center;
+}
+
+
+ main img {
+     width: 90%;
+ }
+
+video {
+    width: 80%;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+main article {
+    padding-left: 3em;
+}
+
+article section {
+    margin-bottom: 4em;
+}
+
+main article footer {
+    margin-bottom: 4em;
+}
+
+article footer p {
+    font-size: 0.9em;
+}
+
+ol.flex-container li.flex-item a {
+    text-decoration: none;
+
+
+
+}
+ol.flex-container li.flex-item {
+    display: table;
+    margin-top: 1em;
+     background-color: #dfdfdf;
+     padding: .25em 7em;
+}
+ol.flex-container {
+    padding-left: 0;
+}
+
+
+/*FORMULIEREN*/
+
+form {
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+
+
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 1.8% 3%;
+    margin: 2% 0;
+    border: 1% solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+label span{
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: grey;
+    color: white;
+    padding: 1.8% 3%;
+    text-decoration: none;
+    margin: 2em auto;
+    cursor: pointer;
+
+}
+
+textarea {
+    width: 100%;
+    padding: 10% 3%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border: 1% solid #ccc;
+    background-color: #f8f8f8;
+}
+
+
+
+
+/* STYLING VAN DE ASIDE */
+
+aside {
+    float: left;
+    width: 40%;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    margin-bottom: 10em;
+
+}
+
+aside section h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+aside section h2, section.related h2 {
+    background-color: rgb(255,204,0);
+    padding: 1em 0em;
+    text-align: center;
+}
+aside section article {
+    width: 75%;
+    margin: 0 auto 4em;
+    border-bottom: 1px solid grey;
+}
+
+aside section article p a {
+    display: table;
+    margin-top: 1em;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+/* STYLING VAN DE RELATED SECTION */
+
+section.related {
+    float: left;
+    width: 100%;
+    padding: 1em 2em;
+    box-sizing: border-box;
+
+}
+
+.related section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related section article {
+    width: 45%;
+    margin: 2.5%;
+    background-color: #ffcc00;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.related a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+/*STYLING VOORBEELDEN PROJECTEN STUDIES*/
+
+
+
+.related article section {
+    display: block;
+
+}
+
+.related ul li {
+    display: block
+}
+
+/* STYLING VAN DE FOOTER */
+
+body > footer {
+    float: left;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+section.related h3{
+    font-size: 2em;
+}
+section.related article header p{
+    font-size: .8em;
+}
+
+section.related header h3, section.related header p{
+    margin: 0;
+}
+
+dt {
+    font-weight: 700;
+}
+
+
+
+footer #sitemap > ul > li{
+    display: inline-block;
+    margin-right: 1.6em;
+}
+footer #sitemap > ul > li > ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+
+footer p {
+    width: 30em;
+}
+
+/* Tablets */
+@media only screen and (max-width: 50em) {
+
+    main, aside, section.related {
+        float: initial;
+        width: 100%;
+    }
+
+    main article {
+        padding-left: 0em;
+        width: 80%;
+        margin: auto;
+    }
+
+a.to-profile{
+        display: none;
+    }
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 0.8em;
+    font-size: 0.9em;
+}
+
+}
+
+/*Smartphones*/
+
+@media only screen and (max-width: 30em)  {
+
+    section.related section {
+        display: block;
+    }
+
+li {
+    display: block;
+}
+    section.related section article {
+        width: 100%;
+        margin: 2.5% auto;
+    }
+
+    video {
+        width: 100%;
+}
+}
+
